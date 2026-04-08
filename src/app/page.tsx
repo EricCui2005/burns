@@ -85,8 +85,8 @@ export default function Home() {
       </a>
 
       {/* HEADER */}
-      <header className="sticky top-0 z-40 bg-[var(--brand-navy)] text-white shadow-lg">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <header className="sticky top-0 z-40 bg-[var(--brand-navy)] text-white shadow-xl border-b-2 border-[var(--brand-gold)]/60">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
           <a href="#top" className="flex items-center gap-3">
             <Image
               src="/logo.jpg"
@@ -97,22 +97,22 @@ export default function Home() {
               className="rounded-full ring-2 ring-[var(--brand-gold)]"
             />
             <div className="leading-tight">
-              <div className="font-bold text-base sm:text-lg">Burns and Sons</div>
-              <div className="text-[10px] sm:text-xs text-[var(--brand-ice-2)] uppercase tracking-wider">
+              <div className="font-black text-lg sm:text-xl tracking-tight">Burns and Sons</div>
+              <div className="text-[11px] sm:text-xs text-[var(--brand-ice-2)] uppercase tracking-wider font-semibold">
                 Heating · Cooling · Services
               </div>
             </div>
           </a>
-          <nav aria-label="Primary" className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <a href="#services" className="hover:text-[var(--brand-gold)]">Services</a>
-            <a href="#pricing" className="hover:text-[var(--brand-gold)]">Pricing</a>
-            <a href="#about" className="hover:text-[var(--brand-gold)]">About</a>
-            <a href="#area" className="hover:text-[var(--brand-gold)]">Service Area</a>
-            <a href="#contact" className="hover:text-[var(--brand-gold)]">Contact</a>
+          <nav aria-label="Primary" className="hidden md:flex items-center gap-12 lg:gap-16 text-lg font-bold">
+            <a href="#services" className="hover:text-[var(--brand-gold)] transition-colors">Services</a>
+            <a href="#pricing" className="hover:text-[var(--brand-gold)] transition-colors">Pricing</a>
+            <a href="#about" className="hover:text-[var(--brand-gold)] transition-colors">About</a>
+            <a href="#area" className="hover:text-[var(--brand-gold)] transition-colors">Service Area</a>
+            <a href="#contact" className="hover:text-[var(--brand-gold)] transition-colors">Contact</a>
           </nav>
           <a
             href={`tel:${PHONE}`}
-            className="inline-flex items-center gap-2 rounded-full bg-[var(--brand-fire)] px-4 py-2 text-sm font-bold text-white shadow hover:bg-[var(--brand-fire-2)] transition-colors"
+            className="inline-flex items-center gap-2 rounded-full bg-[var(--brand-fire)] px-5 py-2.5 text-base font-black text-white shadow-lg hover:bg-[var(--brand-fire-2)] transition-colors"
           >
             <span aria-hidden>📞</span>
             <span className="hidden sm:inline">{PHONE_DISPLAY}</span>
@@ -203,12 +203,6 @@ export default function Home() {
                   priority
                   className="relative rounded-full ring-4 ring-[var(--brand-gold)]/60 shadow-2xl"
                 />
-                {/* Floating promo badge */}
-                <div className="absolute -bottom-4 -right-4 rotate-6 rounded-2xl bg-[var(--brand-fire)] px-5 py-3 text-white shadow-xl ring-2 ring-white/50">
-                  <div className="text-xs font-bold uppercase tracking-wider">Save</div>
-                  <div className="text-3xl font-black leading-none">15%</div>
-                  <div className="text-[10px] font-semibold">first service</div>
-                </div>
               </div>
             </div>
           </div>
