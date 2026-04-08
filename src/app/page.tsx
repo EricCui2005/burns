@@ -156,10 +156,23 @@ export default function Home() {
                 Specialists
               </h1>
               <p className="mt-5 max-w-xl text-lg text-slate-200">
-                Honest pricing. Quality workmanship. Fast response. For 15 years, David Burns has
-                kept Erie homes and businesses comfortable — and now Burns and Sons brings that same
-                hometown care to every service call.
+                Honest pricing. Quality workmanship. Fast response. Burns and Sons is a
+                family-owned HVAC company built on 15 years of hands-on experience, bringing
+                hometown care to every service call in Erie, PA.
               </p>
+
+              {/* First-time customer offer — inline, tasteful */}
+              <div className="mt-6 flex items-center gap-4 rounded-xl border border-[var(--brand-gold)]/40 bg-[var(--brand-gold)]/10 p-4 backdrop-blur">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--brand-gold)] text-[var(--brand-navy)] text-lg font-black">
+                  15%
+                </div>
+                <div className="text-sm">
+                  <div className="font-bold text-[var(--brand-gold)]">New customer offer</div>
+                  <div className="text-slate-200">
+                    Save 15% on your first service with Burns and Sons.
+                  </div>
+                </div>
+              </div>
 
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <a
@@ -342,11 +355,6 @@ export default function Home() {
                 reliable heating and cooling service to homeowners who trust us. We focus on quality
                 workmanship, fair pricing, and treating every customer like family.
               </p>
-              <p className="mt-4 text-lg leading-8 text-slate-700">
-                Whether you need a brand-new furnace, an AC tune-up before summer, or someone on
-                call at 2 AM when the heat quits — we answer, and we show up.
-              </p>
-
               <dl className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3">
                 <div>
                   <dt className="text-xs font-bold uppercase tracking-wider text-slate-500">Experience</dt>
@@ -468,7 +476,7 @@ export default function Home() {
                 action="#"
               >
                 <h3 className="text-xl font-black text-[var(--brand-navy)]">Request a Free Estimate</h3>
-                <p className="mt-1 text-sm text-slate-600">We&apos;ll get back to you fast — usually the same day.</p>
+                <p className="mt-1 text-sm text-slate-600">Call or text for the fastest response, or send us a note here.</p>
 
                 <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <label className="block text-sm">
