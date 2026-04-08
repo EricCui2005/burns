@@ -85,7 +85,7 @@ export default function Home() {
       </a>
 
       {/* HEADER */}
-      <header className="sticky top-0 z-40 bg-[var(--brand-navy)] text-white shadow-xl border-b-2 border-[var(--brand-gold)]/60">
+      <header className="sticky top-0 z-40 bg-[var(--brand-navy)] text-white shadow-xl border-b-2 border-[var(--brand-fire)]/70">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
           <a href="#top" className="flex items-center gap-3">
             <Image
@@ -94,7 +94,7 @@ export default function Home() {
               width={56}
               height={56}
               priority
-              className="rounded-full ring-2 ring-[var(--brand-gold)]"
+              className="rounded-full ring-2 ring-[var(--brand-ice)]"
             />
             <div className="leading-tight">
               <div className="font-black text-lg sm:text-xl tracking-tight">Burns and Sons</div>
@@ -104,11 +104,11 @@ export default function Home() {
             </div>
           </a>
           <nav aria-label="Primary" className="hidden md:flex items-center gap-12 lg:gap-16 text-base font-bold">
-            <a href="#services" className="hover:text-[var(--brand-gold)] transition-colors">Services</a>
-            <a href="#pricing" className="hover:text-[var(--brand-gold)] transition-colors">Pricing</a>
-            <a href="#about" className="hover:text-[var(--brand-gold)] transition-colors">About</a>
-            <a href="#area" className="hover:text-[var(--brand-gold)] transition-colors">Service Area</a>
-            <a href="#contact" className="hover:text-[var(--brand-gold)] transition-colors">Contact</a>
+            <a href="#services" className="hover:text-[var(--brand-ice-2)] transition-colors">Services</a>
+            <a href="#pricing" className="hover:text-[var(--brand-ice-2)] transition-colors">Pricing</a>
+            <a href="#about" className="hover:text-[var(--brand-ice-2)] transition-colors">About</a>
+            <a href="#area" className="hover:text-[var(--brand-ice-2)] transition-colors">Service Area</a>
+            <a href="#contact" className="hover:text-[var(--brand-ice-2)] transition-colors">Contact</a>
           </nav>
           <a
             href={`tel:${PHONE}`}
@@ -134,18 +134,18 @@ export default function Home() {
           {/* Fire/ice glow accents */}
           <div
             aria-hidden
-            className="absolute -top-24 -left-24 h-96 w-96 rounded-full blur-3xl opacity-30"
-            style={{ background: "radial-gradient(circle, #3ba9e0, transparent 60%)" }}
+            className="absolute -top-24 -left-24 h-96 w-96 rounded-full blur-3xl opacity-30 will-change-transform"
+            style={{ background: "radial-gradient(circle, #3ba9e0, transparent 60%)", transform: "translateZ(0)" }}
           />
           <div
             aria-hidden
-            className="absolute -bottom-32 -right-24 h-[28rem] w-[28rem] rounded-full blur-3xl opacity-30"
-            style={{ background: "radial-gradient(circle, #e8481c, transparent 60%)" }}
+            className="absolute -bottom-32 -right-24 h-[28rem] w-[28rem] rounded-full blur-3xl opacity-30 will-change-transform"
+            style={{ background: "radial-gradient(circle, #e8481c, transparent 60%)", transform: "translateZ(0)" }}
           />
 
           <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8 lg:py-24">
             <div className="flex flex-col justify-center">
-              <div className="inline-flex w-fit items-center gap-2 rounded-full bg-[var(--brand-gold)]/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[var(--brand-gold)] ring-1 ring-[var(--brand-gold)]/40">
+              <div className="inline-flex w-fit items-center gap-2 rounded-full bg-[var(--brand-ice)]/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[var(--brand-ice-2)] ring-1 ring-[var(--brand-ice)]/40">
                 <span>★</span> Family-owned · Licensed & Insured · Est. 2026
               </div>
               <h1 className="mt-5 text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
@@ -162,12 +162,12 @@ export default function Home() {
               </p>
 
               {/* First-time customer offer — inline, tasteful */}
-              <div className="mt-6 flex items-center gap-4 rounded-xl border border-[var(--brand-gold)]/40 bg-[var(--brand-gold)]/10 p-4 backdrop-blur">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--brand-gold)] text-[var(--brand-navy)] text-lg font-black">
+              <div className="mt-6 flex items-center gap-4 rounded-xl border border-[var(--brand-fire)]/40 bg-[var(--brand-fire)]/10 p-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--brand-fire)] text-white text-lg font-black shadow-lg shadow-[var(--brand-fire)]/30">
                   15%
                 </div>
                 <div className="text-sm">
-                  <div className="font-bold text-[var(--brand-gold)]">New customer offer</div>
+                  <div className="font-bold text-[var(--brand-fire-2)]">New customer offer</div>
                   <div className="text-slate-200">
                     Save 15% on your first service with Burns and Sons.
                   </div>
@@ -183,7 +183,7 @@ export default function Home() {
                 </a>
                 <a
                   href={`sms:${PHONE}`}
-                  className="inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-base font-bold text-white ring-1 ring-white/30 backdrop-blur hover:bg-white/20 transition-colors"
+                  className="inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-base font-bold text-white ring-1 ring-white/30 hover:bg-white/20 transition-colors"
                 >
                   💬 Text Us
                 </a>
@@ -201,11 +201,12 @@ export default function Home() {
               <div className="relative">
                 <div
                   aria-hidden
-                  className="absolute inset-0 -m-6 rounded-full blur-2xl"
+                  className="absolute inset-0 -m-6 rounded-full blur-2xl will-change-transform"
                   style={{
                     background:
                       "conic-gradient(from 180deg, #e8481c, #f7b733, #3ba9e0, #e8481c)",
                     opacity: 0.35,
+                    transform: "translateZ(0)",
                   }}
                 />
                 <Image
@@ -214,7 +215,8 @@ export default function Home() {
                   width={420}
                   height={420}
                   priority
-                  className="relative rounded-full ring-4 ring-[var(--brand-gold)]/60 shadow-2xl"
+                  sizes="(max-width: 1024px) 280px, 420px"
+                  className="relative rounded-full ring-4 ring-[var(--brand-ice)]/50 shadow-2xl"
                 />
               </div>
             </div>
@@ -222,7 +224,11 @@ export default function Home() {
         </section>
 
         {/* SERVICES */}
-        <section id="services" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <section
+          id="services"
+          className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8"
+          style={{ contentVisibility: "auto", containIntrinsicSize: "1000px" }}
+        >
           <div className="mx-auto max-w-2xl text-center">
             <div className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--brand-fire)]">
               What we do
@@ -256,10 +262,11 @@ export default function Home() {
         <section
           id="pricing"
           className="bg-[var(--brand-navy)] text-white"
+          style={{ contentVisibility: "auto", containIntrinsicSize: "1200px" }}
         >
           <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
-              <div className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--brand-gold)]">
+              <div className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--brand-ice-2)]">
                 Transparent pricing
               </div>
               <h2 className="mt-2 text-3xl font-black sm:text-4xl">Straightforward Rates, No Surprises</h2>
@@ -271,7 +278,7 @@ export default function Home() {
 
             {/* Clean & Check */}
             <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-3">
-              <div className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10 backdrop-blur">
+              <div className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
                 <h3 className="text-lg font-bold text-[var(--brand-ice-2)]">Clean & Check</h3>
                 <ul className="mt-4 divide-y divide-white/10">
                   {cleanCheck.map((i) => (
@@ -287,14 +294,14 @@ export default function Home() {
               {serviceAgreements.map((p) => (
                 <div
                   key={p.name}
-                  className={`relative rounded-2xl p-6 ring-1 backdrop-blur ${
+                  className={`relative rounded-2xl p-6 ring-1 ${
                     p.featured
-                      ? "bg-gradient-to-br from-[var(--brand-fire)]/25 to-[var(--brand-gold)]/10 ring-[var(--brand-gold)]/60"
+                      ? "bg-gradient-to-br from-[var(--brand-fire)]/25 to-[var(--brand-ice)]/10 ring-[var(--brand-fire)]/50"
                       : "bg-white/5 ring-white/10"
                   }`}
                 >
                   {p.featured && (
-                    <div className="absolute -top-3 right-4 rounded-full bg-[var(--brand-gold)] px-3 py-1 text-xs font-bold text-[var(--brand-navy)]">
+                    <div className="absolute -top-3 right-4 rounded-full bg-[var(--brand-fire)] px-3 py-1 text-xs font-bold text-white shadow-lg shadow-[var(--brand-fire)]/30">
                       Best Value
                     </div>
                   )}
@@ -306,7 +313,7 @@ export default function Home() {
                   <ul className="mt-5 space-y-2 text-sm text-slate-200">
                     {p.highlights.map((h) => (
                       <li key={h} className="flex gap-2">
-                        <span className="text-[var(--brand-gold)]">✓</span>
+                        <span className="text-[var(--brand-ice-2)]">✓</span>
                         <span>{h}</span>
                       </li>
                     ))}
@@ -319,7 +326,7 @@ export default function Home() {
             <div className="mt-12 rounded-2xl bg-gradient-to-r from-[var(--brand-fire)]/15 via-white/5 to-[var(--brand-ice)]/15 p-6 ring-1 ring-white/10">
               <div className="flex flex-wrap items-center justify-between gap-6">
                 <div>
-                  <h3 className="text-lg font-bold text-[var(--brand-gold)]">Discounts</h3>
+                  <h3 className="text-lg font-bold text-[var(--brand-ice-2)]">Discounts</h3>
                   <p className="mt-1 text-sm text-slate-300">
                     Thanks for your service, and for welcoming us into your home.
                   </p>
@@ -340,7 +347,11 @@ export default function Home() {
         </section>
 
         {/* ABOUT + FLYER */}
-        <section id="about" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <section
+          id="about"
+          className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8"
+          style={{ contentVisibility: "auto", containIntrinsicSize: "900px" }}
+        >
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-5">
             <div className="lg:col-span-3">
               <div className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--brand-fire)]">
@@ -375,10 +386,11 @@ export default function Home() {
               <div className="relative mx-auto w-full max-w-sm">
                 <div
                   aria-hidden
-                  className="absolute -inset-2 rounded-3xl blur-xl opacity-40"
+                  className="absolute -inset-2 rounded-3xl blur-xl opacity-40 will-change-transform"
                   style={{
                     background:
                       "linear-gradient(135deg, #3ba9e0, #e8481c)",
+                    transform: "translateZ(0)",
                   }}
                 />
                 <Image
@@ -386,6 +398,8 @@ export default function Home() {
                   alt="Burns and Sons promotional flyer — pricing, discounts, and service agreements"
                   width={600}
                   height={900}
+                  loading="lazy"
+                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 400px, 384px"
                   className="relative w-full rounded-2xl shadow-2xl ring-1 ring-slate-200"
                 />
               </div>
@@ -397,7 +411,11 @@ export default function Home() {
         </section>
 
         {/* SERVICE AREA */}
-        <section id="area" className="bg-white">
+        <section
+          id="area"
+          className="bg-white"
+          style={{ contentVisibility: "auto", containIntrinsicSize: "500px" }}
+        >
           <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 lg:px-8">
             <div className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--brand-fire)]">
               Where we work
@@ -415,19 +433,24 @@ export default function Home() {
         </section>
 
         {/* CONTACT / CTA */}
-        <section id="contact" className="relative overflow-hidden bg-[var(--brand-navy)] text-white">
+        <section
+          id="contact"
+          className="relative overflow-hidden bg-[var(--brand-navy)] text-white"
+          style={{ contentVisibility: "auto", containIntrinsicSize: "900px" }}
+        >
           <div
             aria-hidden
-            className="absolute inset-0 opacity-20"
+            className="absolute inset-0 opacity-20 will-change-transform"
             style={{
               background:
                 "radial-gradient(circle at 20% 30%, #3ba9e0, transparent 40%), radial-gradient(circle at 80% 70%, #e8481c, transparent 40%)",
+              transform: "translateZ(0)",
             }}
           />
           <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
               <div>
-                <div className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--brand-gold)]">
+                <div className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--brand-ice-2)]">
                   Get in touch
                 </div>
                 <h2 className="mt-2 text-3xl font-black sm:text-4xl">
@@ -460,7 +483,7 @@ export default function Home() {
                     </div>
                   </a>
                   <div className="flex items-center gap-4 rounded-xl bg-white/5 p-4 ring-1 ring-white/10">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--brand-gold)] text-xl">📍</div>
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--brand-navy-2)] ring-1 ring-[var(--brand-ice)]/40 text-xl">📍</div>
                     <div>
                       <div className="text-xs font-bold uppercase tracking-wider text-slate-400">Service area</div>
                       <div className="text-xl font-bold">Erie, PA</div>
@@ -552,7 +575,7 @@ export default function Home() {
                   alt={`${BUSINESS_NAME} logo`}
                   width={48}
                   height={48}
-                  className="rounded-full ring-2 ring-[var(--brand-gold)]"
+                  className="rounded-full ring-2 ring-[var(--brand-ice)]"
                 />
                 <div>
                   <div className="font-bold text-white">Burns and Sons</div>
