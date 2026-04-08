@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbfaf7;
+  --background: #e9edf3;
   --foreground: #0a1b2e;
 
   /* Brand palette, sampled from logo (fire + ice) */
@@ -12,7 +12,7 @@
   --brand-gold: #f7b733;
   --brand-ice: #3ba9e0;
   --brand-ice-2: #7fd0ef;
-  --brand-cream: #fbfaf7;
+  --brand-cream: #e9edf3;
 }
 
 @theme inline {

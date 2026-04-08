@@ -275,7 +275,7 @@ export default function Home() {
           className="bg-[var(--brand-navy)] text-white"
           style={{ contentVisibility: "auto", containIntrinsicSize: "1200px" }}
         >
-          <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+          <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <div className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--brand-ice-2)]">
                 Transparent pricing
@@ -424,7 +424,6 @@ export default function Home() {
         {/* SERVICE AREA */}
         <section
           id="area"
-          className="bg-white"
           style={{ contentVisibility: "auto", containIntrinsicSize: "500px" }}
         >
           <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 lg:px-8">
