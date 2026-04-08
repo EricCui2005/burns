@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fbfaf7;
+  --foreground: #0a1b2e;
+
+  /* Brand palette, sampled from logo (fire + ice) */
+  --brand-navy: #0a1b2e;
+  --brand-navy-2: #12325a;
+  --brand-fire: #e8481c;
+  --brand-fire-2: #f4701a;
+  --brand-gold: #f7b733;
+  --brand-ice: #3ba9e0;
+  --brand-ice-2: #7fd0ef;
+  --brand-cream: #fbfaf7;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-navy: var(--brand-navy);
+  --color-navy-2: var(--brand-navy-2);
+  --color-fire: var(--brand-fire);
+  --color-fire-2: var(--brand-fire-2);
+  --color-gold: var(--brand-gold);
+  --color-ice: var(--brand-ice);
+  --color-ice-2: var(--brand-ice-2);
+  --color-cream: var(--brand-cream);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* Accessibility: focus ring matching brand */
+:focus-visible {
+  outline: 2px solid var(--brand-fire);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
