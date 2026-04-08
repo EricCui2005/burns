@@ -167,8 +167,14 @@ export default function Home() {
               </p>
 
               {/* First-time customer offer — inline, tasteful */}
-              <div className="mt-6 flex items-center gap-4 rounded-xl border border-[var(--brand-fire)]/40 bg-[var(--brand-fire)]/10 p-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--brand-fire)] text-white text-lg font-black shadow-lg shadow-[var(--brand-fire)]/30">
+              <div
+                className="mt-6 flex items-center gap-4 rounded-xl border border-[var(--brand-fire)]/50 p-4 shadow-lg shadow-[var(--brand-fire)]/15"
+                style={{
+                  background:
+                    "linear-gradient(135deg, rgba(232,72,28,0.18) 0%, rgba(232,72,28,0.06) 100%)",
+                }}
+              >
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[var(--brand-fire)] to-[var(--brand-fire-2)] text-white text-lg font-black shadow-lg shadow-[var(--brand-fire)]/40 ring-1 ring-white/20">
                   15%
                 </div>
                 <div className="text-sm">
