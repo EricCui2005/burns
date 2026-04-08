@@ -167,12 +167,12 @@ export default function Home() {
               </p>
 
               {/* First-time customer offer — inline, tasteful */}
-              <div className="mt-6 flex items-center gap-4 rounded-xl border border-[var(--brand-gold)]/40 bg-[var(--brand-gold)]/10 p-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--brand-gold)] text-[var(--brand-navy)] text-lg font-black shadow-lg shadow-[var(--brand-gold)]/30">
+              <div className="mt-6 flex items-center gap-4 rounded-xl border border-[var(--brand-fire)]/40 bg-[var(--brand-fire)]/10 p-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--brand-fire)] text-white text-lg font-black shadow-lg shadow-[var(--brand-fire)]/30">
                   15%
                 </div>
                 <div className="text-sm">
-                  <div className="font-bold text-[var(--brand-gold)]">New customer offer</div>
+                  <div className="font-bold text-[var(--brand-fire-2)]">New customer offer</div>
                   <div className="text-slate-200">
                     Save 15% on your first service with Burns and Sons.
                   </div>
@@ -301,12 +301,12 @@ export default function Home() {
                   key={p.name}
                   className={`relative rounded-2xl p-6 ring-1 ${
                     p.featured
-                      ? "bg-gradient-to-br from-[var(--brand-gold)]/25 to-[var(--brand-gold)]/5 ring-[var(--brand-gold)]/60"
+                      ? "bg-gradient-to-br from-[var(--brand-fire)]/25 to-[var(--brand-ice)]/10 ring-[var(--brand-fire)]/50"
                       : "bg-white/5 ring-white/10"
                   }`}
                 >
                   {p.featured && (
-                    <div className="absolute -top-3 right-4 rounded-full bg-[var(--brand-gold)] px-3 py-1 text-xs font-bold text-[var(--brand-navy)] shadow-lg shadow-[var(--brand-gold)]/30">
+                    <div className="absolute -top-3 right-4 rounded-full bg-[var(--brand-fire)] px-3 py-1 text-xs font-bold text-white shadow-lg shadow-[var(--brand-fire)]/30">
                       Best Value
                     </div>
                   )}
