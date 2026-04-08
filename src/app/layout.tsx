@@ -74,10 +74,7 @@ const jsonLd = {
     addressRegion: "PA",
     addressCountry: "US",
   },
-  areaServed: [
-    { "@type": "City", name: "Erie" },
-    { "@type": "State", name: "Pennsylvania" },
-  ],
+  areaServed: { "@type": "City", name: "Erie", containedInPlace: { "@type": "State", name: "Pennsylvania" } },
   founder: { "@type": "Person", name: "David Burns" },
   foundingDate: "2026",
   openingHoursSpecification: {

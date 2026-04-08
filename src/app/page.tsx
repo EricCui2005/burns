@@ -390,40 +390,19 @@ export default function Home() {
 
         {/* SERVICE AREA */}
         <section id="area" className="bg-white">
-          <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
-              <div className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--brand-fire)]">
-                Where we work
-              </div>
-              <h2 className="mt-2 text-3xl font-black sm:text-4xl">Proudly Serving Erie, PA &amp; Surrounding Areas</h2>
-              <p className="mt-4 text-slate-600">
-                We service residential and commercial customers throughout Erie County. If you&apos;re
-                nearby and not sure, give us a call — odds are we can help.
-              </p>
+          <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6 lg:px-8">
+            <div className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--brand-fire)]">
+              Where we work
             </div>
-            <ul className="mx-auto mt-10 flex max-w-4xl flex-wrap justify-center gap-3 text-sm">
-              {[
-                "Erie",
-                "Millcreek",
-                "Harborcreek",
-                "Fairview",
-                "Girard",
-                "Edinboro",
-                "Waterford",
-                "North East",
-                "McKean",
-                "Summit Township",
-                "Lake City",
-                "Wesleyville",
-              ].map((city) => (
-                <li
-                  key={city}
-                  className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 font-medium text-slate-700"
-                >
-                  {city}
-                </li>
-              ))}
-            </ul>
+            <h2 className="mt-2 text-3xl font-black sm:text-4xl">Proudly Serving Erie, PA</h2>
+            <p className="mt-4 text-slate-600">
+              Burns and Sons is based in Erie and serves residential and commercial customers
+              throughout the city. Not sure if you&apos;re in our area? Give us a call and we&apos;ll
+              let you know.
+            </p>
+            <div className="mt-8 inline-flex items-center gap-3 rounded-full border border-slate-200 bg-slate-50 px-5 py-3 text-base font-bold text-[var(--brand-navy)]">
+              <span aria-hidden>📍</span> Erie, Pennsylvania
+            </div>
           </div>
         </section>
 
@@ -476,7 +455,7 @@ export default function Home() {
                     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--brand-gold)] text-xl">📍</div>
                     <div>
                       <div className="text-xs font-bold uppercase tracking-wider text-slate-400">Service area</div>
-                      <div className="text-xl font-bold">Erie, PA &amp; surrounding</div>
+                      <div className="text-xl font-bold">Erie, PA</div>
                     </div>
                   </div>
                 </div>
@@ -593,7 +572,7 @@ export default function Home() {
               <ul className="mt-3 space-y-2 text-sm">
                 <li><a href={`tel:${PHONE}`} className="hover:text-white">{PHONE_DISPLAY}</a></li>
                 <li><a href={`mailto:${EMAIL}`} className="hover:text-white break-all">{EMAIL}</a></li>
-                <li>Erie, PA &amp; surrounding</li>
+                <li>Erie, PA</li>
               </ul>
             </div>
           </div>
