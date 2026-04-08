@@ -103,7 +103,7 @@ export default function Home() {
               </div>
             </div>
           </a>
-          <nav aria-label="Primary" className="hidden md:flex items-center gap-12 lg:gap-16 text-lg font-bold">
+          <nav aria-label="Primary" className="hidden md:flex items-center gap-12 lg:gap-16 text-base font-bold">
             <a href="#services" className="hover:text-[var(--brand-gold)] transition-colors">Services</a>
             <a href="#pricing" className="hover:text-[var(--brand-gold)] transition-colors">Pricing</a>
             <a href="#about" className="hover:text-[var(--brand-gold)] transition-colors">About</a>
