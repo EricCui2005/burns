@@ -155,7 +155,7 @@ export default function Home() {
               </div>
               <h1 className="mt-5 text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
                 Erie&apos;s Trusted{" "}
-                <span className="bg-gradient-to-r from-[var(--brand-ice-2)] via-white to-[var(--brand-fire-2)] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[var(--brand-fire-2)] via-white to-[var(--brand-ice-2)] bg-clip-text text-transparent">
                   Heating & Cooling
                 </span>{" "}
                 Specialists
